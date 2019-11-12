@@ -385,7 +385,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.dennisweissmann.DeviceKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -440,7 +439,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.dennisweissmann.DeviceKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
@@ -543,6 +541,7 @@
 		95CBDB681BFD2B440065FC66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -576,7 +575,7 @@
 					"@executable_path/../Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator watchsimulator watchos";
+				SDKROOT = iphoneos;
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "compile-time";
 				SWIFT_VERSION = 4.2;
 			};
@@ -585,6 +584,7 @@
 		95CBDB691BFD2B440065FC66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -616,7 +616,7 @@
 					"@loader_path/../Frameworks",
 					"@executable_path/../Frameworks",
 				);
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator watchsimulator watchos";
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "compile-time";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
